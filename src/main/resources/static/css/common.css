@@ -1,0 +1,19 @@
+/* --------------  Common  ---------------------- */
+.capitalize {
+	text-transform: capitalize;
+}
+
+ul {
+	display:flex;
+	justify-content:space-around;
+	padding: 1rem;
+	position:relative;
+}
+
+ul li {
+	list-style-type:none;
+	padding: 1rem;
+}
+
+
+

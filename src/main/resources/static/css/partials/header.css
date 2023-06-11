@@ -1,0 +1,44 @@
+
+/* --------------  Header  ---------------------- */
+h1 {
+	padding: 1rem;
+}
+i {
+	color:var(--st-light);
+}
+
+li {
+	text-decoration:none;
+	text-transform:none;
+}
+
+header {
+	background-color: var(--royal-blue);
+	position:absolute; 
+	width:100%;
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-content: right;
+	box-shadow:0 0 5px var(--st-dark);
+	z-index:-1;
+}
+
+.dropdown {
+	display: none;
+	position: absolute;
+	background-color: #cecece;
+	right:0;
+}
+
+.usr {
+	vertical-align:center;
+}
+.usr:hover .dropdown {
+	display: block!important;
+}
+
+.dropdown li {
+	padding: 0.5rem;
+}

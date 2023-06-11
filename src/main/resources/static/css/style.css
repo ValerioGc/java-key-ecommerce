@@ -1,0 +1,107 @@
+@import url("common.css");
+@import url("reset.css");
+@import url("vars.css");
+
+@import url("partials/header.css");
+@import url("partials/aside.css");
+
+body{
+	height:100vh;
+	overflow-y: hidden;
+}
+
+/* --------------  Main  ---------------------- */
+
+main {
+	background-color: var(--baby-blue);
+	min-height: calc(100vh - 10.5rem);
+	width:100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding: 1.5rem;
+	margin-top:5rem;
+}
+
+table {
+	width:100%;
+	margin:0.5rem;
+}
+#main_container {
+	display:flex;
+	justify-content:stretch;
+	align-items:stretch;
+	width:100vw;
+	height:100vh;
+}
+
+.cover{
+
+	padding:0;
+	width:80px;
+	margin:0;
+}
+
+.cover img {
+	object-fit:cover;
+	width:100%;
+	height:100%;
+	padding:0;
+}
+
+td {
+	border:1px solid var(--st-dark);
+	padding:0.5rem;
+}
+
+
+.fa-pen-to-square{
+	color:green!important;
+}
+.fa-trash-can {
+	color:red!important;
+}
+
+/* --------------  Footer  ----------------- */
+tr {
+	background-color:lightblue;
+}
+tr:nth-child(odd) {
+	background-color:lightblue;
+}
+
+footer {
+	text-align:center;
+	padding:2rem;
+	margin:auto;
+	background-color:var(--royal-blue);
+}
+
+::-webkit-scrollbar-track{
+	border: 1px solid black;
+	background-color: #F5F5F5;
+}
+::-webkit-scrollbar{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb{
+	border-radius:5px;
+	background-color: var(--royal-blue);	
+}
+
+th {
+	padding:1rem;
+	font-size:bold;
+}
+
+td {
+	height: 4rem;
+	padding: 0.5rem;
+}
+
+
+.section_group {
+	display: flex;
+	align-items: center;
+	justify-content: space_between;
+}

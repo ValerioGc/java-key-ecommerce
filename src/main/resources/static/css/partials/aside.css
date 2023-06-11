@@ -1,0 +1,52 @@
+/* --------------  Aside  ---------------------- */
+
+aside {
+	width:25vw;
+	height:100vh;
+	background-color:var(--navy-blue);
+	z-index:99;
+	position:relative;
+}
+
+aside ul li a {
+	color: var(--st-light);
+	display: inline-block;
+}
+
+.dashboard {
+	width:80%;
+	margin:auto;
+}
+
+.section_menu {
+	padding:1rem;
+	border-bottom:0.5px solid var(--st-light);
+	display:flex;
+	justify-content: space_between;
+	align-items:center;
+}
+.section_menu::last-child {
+	margin-left:auto;
+}
+
+.section_menu i {
+	padding:0.5rem;
+	text-align:right;
+}
+
+.close_menu_btn {
+	position:absolute;
+	top:1rem;
+	right:1rem;
+}
+
+.opt_menu {
+	display:flex;
+	vertical-align:middle;
+	flex-direction:column;
+	justify-content:center;
+}
+h5 {
+	color:var(--st-light);
+}
+
