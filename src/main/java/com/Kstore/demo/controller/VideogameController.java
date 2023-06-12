@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.Kstore.demo.pojo.Category;
-import com.Kstore.demo.pojo.Videogame;
+import com.Kstore.demo.pojo.product.Category;
+import com.Kstore.demo.pojo.product.Videogame;
 import com.Kstore.demo.service.CategoryService;
 import com.Kstore.demo.service.VideogameService;
 

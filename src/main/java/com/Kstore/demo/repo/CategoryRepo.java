@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.Kstore.demo.pojo.Category;
+import com.Kstore.demo.pojo.product.Category;
 
 public interface CategoryRepo extends JpaRepository<Category, Integer> {
 

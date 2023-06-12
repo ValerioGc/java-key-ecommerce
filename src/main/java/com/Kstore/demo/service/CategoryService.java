@@ -6,8 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.Kstore.demo.pojo.Category;
-import com.Kstore.demo.pojo.Customer;
+import com.Kstore.demo.pojo.product.Category;
+import com.Kstore.demo.pojo.user.Customer;
 import com.Kstore.demo.repo.CategoryRepo;
 import com.Kstore.demo.repo.CustomerRepo;
 

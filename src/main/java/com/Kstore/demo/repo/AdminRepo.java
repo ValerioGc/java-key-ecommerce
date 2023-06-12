@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.Kstore.demo.pojo.Admin;
+import com.Kstore.demo.pojo.user.Admin;
 
 public interface AdminRepo extends JpaRepository<Admin, Integer> {
 

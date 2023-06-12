@@ -1,4 +1,4 @@
-package com.Kstore.demo.pojo;
+package com.Kstore.demo.pojo.user;
 
 
 import org.springframework.util.DigestUtils;

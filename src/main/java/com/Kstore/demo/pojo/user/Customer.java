@@ -1,8 +1,10 @@
-package com.Kstore.demo.pojo;
+package com.Kstore.demo.pojo.user;
 
 import java.time.LocalDate;
 
 import org.springframework.util.DigestUtils;
+
+import com.Kstore.demo.interfaces.User;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -13,7 +15,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table
-public class Customer implements Person {
+public class Customer implements User {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -136,23 +138,5 @@ public class Customer implements Person {
 	@Override
 	public String toString(){
 		return "Nome: " + getName() + "\nCognome: " + getSurname();
-	}
-
-	@Override
-	public void getInfo() {
-		// TODO Auto-generated method stub
-		
-	}
-	
-	@Override
-	public void getFullName() {
-		// TODO Auto-generated method stub
-		
-	}
-	
-	@Override
-	public void getRole() {
-		// TODO Auto-generated method stub
-		
 	}
 }

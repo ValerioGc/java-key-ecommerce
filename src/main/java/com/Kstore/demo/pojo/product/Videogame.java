@@ -1,4 +1,4 @@
-package com.Kstore.demo.pojo;
+package com.Kstore.demo.pojo.product;
 
 import java.time.LocalDate;
 import java.util.List;

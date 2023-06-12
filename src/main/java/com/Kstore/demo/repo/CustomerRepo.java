@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.Kstore.demo.pojo.Customer;
+import com.Kstore.demo.pojo.user.Customer;
 
 public interface CustomerRepo extends JpaRepository<Customer, Integer> {
 

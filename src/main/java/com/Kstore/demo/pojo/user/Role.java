@@ -1,5 +1,4 @@
-package com.Kstore.demo.pojo;
-
+package com.Kstore.demo.pojo.user;
 
 import java.util.List;
 
@@ -8,46 +7,36 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.ManyToMany;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
-@Table
+@Table 
 @Entity
-public class Category {
-
+public class Role {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
 	@Column
-//	@NotEmpty(message = "Il nome della categoria non deve essere vuoto")
 	private String name;
 	
-	@ManyToMany
-	private List<Videogame> videogames;
+	@OneToMany
+	private List<Object> customers;
 	
-	@ManyToMany
-	private List<Software> software;
 	
-	// Constructors --------------------------------------------------------
-	public Category() {}
-	public Category(String name) {
+	public Role() {
+		
+	}
+	public Role(String name) {
 		setName(name);
 	}
-
 	public String getName() {
 		return name;
 	}
-
 	public void setName(String name) {
 		this.name = name;
 	}
-
-	public int getId() {
-		return id;
-	}
-	
 	
 	
 }

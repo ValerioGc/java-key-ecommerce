@@ -4,6 +4,9 @@
 
 @import url("partials/header.css");
 @import url("partials/aside.css");
+@import url("partials/scrollbar.css");
+@import url("partials/table.css");
+
 
 body{
 	height:100vh;
@@ -11,7 +14,6 @@ body{
 }
 
 /* --------------  Main  ---------------------- */
-
 main {
 	background-color: var(--baby-blue);
 	min-height: calc(100vh - 10.5rem);
@@ -22,10 +24,15 @@ main {
 	margin-top:5rem;
 }
 
-table {
-	width:100%;
-	margin:0.5rem;
+.main_btn_dash {
+	padding:1rem;
+	box-shadow:0 0 5px #000000;
+	display:inline-block;
+	background-color:white;
+	border-radius:5px;
+	margin:2rem auto;
 }
+
 #main_container {
 	display:flex;
 	justify-content:stretch;
@@ -34,8 +41,25 @@ table {
 	height:100vh;
 }
 
-.cover{
+.container_main_btn_dash {
+	display:flex;
+	align-items:center;
+	justify-content:space-around;
+}
 
+.transaction_home_title {
+	font-size:20px;	
+}
+
+.homepage_container {
+	background-color:white;	
+	padding:1rem;
+	margin:1rem auto;
+	border-radius:5px;
+	box-shadow:0 0 5px #000000;
+}
+
+.cover {
 	padding:0;
 	width:80px;
 	margin:0;
@@ -48,60 +72,13 @@ table {
 	padding:0;
 }
 
-td {
-	border:1px solid var(--st-dark);
-	padding:0.5rem;
-}
 
-
-.fa-pen-to-square{
-	color:green!important;
-}
-.fa-trash-can {
-	color:red!important;
-}
 
 /* --------------  Footer  ----------------- */
-tr {
-	background-color:lightblue;
-}
-tr:nth-child(odd) {
-	background-color:lightblue;
-}
 
 footer {
-	text-align:center;
-	padding:2rem;
-	margin:auto;
-	background-color:var(--royal-blue);
-}
-
-::-webkit-scrollbar-track{
-	border: 1px solid black;
-	background-color: #F5F5F5;
-}
-::-webkit-scrollbar{
-	width: 10px;
-	background-color: #F5F5F5;
-}
-::-webkit-scrollbar-thumb{
-	border-radius:5px;
-	background-color: var(--royal-blue);	
-}
-
-th {
-	padding:1rem;
-	font-size:bold;
-}
-
-td {
-	height: 4rem;
-	padding: 0.5rem;
-}
-
-
-.section_group {
-	display: flex;
-	align-items: center;
-	justify-content: space_between;
+	text-align: center;
+	padding: 2rem;
+	margin: auto;
+	background-color: var(--royal-blue);
 }
