@@ -19,6 +19,7 @@ public class ApiSearchController {
 
 	@Autowired
 	VideogameService videogameService;
+	
 //  Ricerca giochi per nome ---------------------------------------------------------------------
 	@GetMapping("/{query}")
 	public List<Videogame> searchVideogameByTitle(@PathVariable("query") String q) {
